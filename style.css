@@ -1,0 +1,325 @@
+/* Certinomis Drivers Page Clone - Precision V2.2 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800;900&display=swap');
+
+:root {
+    --certinomis-lite-blue: rgb(65, 124, 255);
+    --certinomis-dark-blue: rgb(0, 115, 180);
+    --certinomis-pure-blue: rgb(0, 0, 255);
+    --text-grey: #777;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* Utils */
+.container-narrow {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Top Bar Info */
+.top-info-bar {
+    background-color: #fff;
+    border-bottom: 1px solid #efefef;
+    padding: 12px 0;
+    font-size: 13px;
+    color: #777;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 38px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-right a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.search-link {
+    color: #555;
+    text-transform: none;
+}
+
+.search-link i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.blue-btn {
+    background-color: #0000ff;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: none;
+}
+
+/* Navigation */
+.main-nav {
+    background-color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--certinomis-pure-blue);
+    font-weight: 800;
+    font-size: 14px;
+    padding: 18px 0;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.nav-links li a::after {
+    content: ' ▾';
+    font-size: 12px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 950px;
+    background-image: url('https://www.certinomis.fr/wp-content/uploads/2019/12/slider-certinomis-haute-definition.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.hero-overlay {
+    background-color: rgba(255, 255, 255, 0.97);
+    width: 95%;
+    max-width: 1100px;
+    padding: 80px 40px;
+    text-align: center;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.hero-overlay h1 {
+    color: var(--certinomis-pure-blue);
+    font-weight: 900;
+    font-size: 44px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    letter-spacing: 1.5px;
+}
+
+.hero-warning {
+    color: var(--certinomis-pure-blue);
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0 auto 40px;
+    max-width: 900px;
+}
+
+.system-instruction {
+    color: var(--certinomis-pure-blue);
+    font-weight: 800;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.separator {
+    height: 1px;
+    background-color: #efefef;
+    width: 550px;
+    margin: 0 auto 50px;
+}
+
+/* Drivers Grid */
+.drivers-grid {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.driver-col {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.col-title {
+    color: var(--certinomis-pure-blue);
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.driver-list {
+    list-style: none;
+}
+
+.driver-list li {
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--certinomis-pure-blue);
+    cursor: pointer;
+}
+
+.driver-list li:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+.certinomis-footer {
+    color: #fff;
+}
+
+.footer-contact {
+    background-color: var(--certinomis-lite-blue);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-contact h3 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.footer-contact .phone {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.footer-contact .hours {
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.footer-links-bar {
+    background-color: var(--certinomis-lite-blue);
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-brand {
+    background-color: var(--certinomis-dark-blue);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-brand p {
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.docaposte-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Cookie Button */
+.cookie-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffcc00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.cookie-btn i {
+    color: #000;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .drivers-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .driver-col {
+        margin-bottom: 40px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 28px;
+    }
+
+    .separator {
+        width: 80%;
+    }
+}
